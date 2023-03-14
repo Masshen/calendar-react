@@ -116,6 +116,7 @@ export const tileGroupProps = {
   tileContent: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
   value: isValue,
   valueType: PropTypes.string,
+  values: PropTypes.array,
 };
 
 export const tileProps = {

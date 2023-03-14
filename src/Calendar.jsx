@@ -187,6 +187,7 @@ export default class Calendar extends Component {
     returnValue: 'start',
     showNavigation: true,
     showNeighboringMonth: true,
+    values: [],
   };
 
   static propTypes = {
@@ -244,6 +245,7 @@ export default class Calendar extends Component {
     tileDisabled: PropTypes.func,
     value: isLooseValue,
     view: isView,
+    values: PropTypes.array,
   };
 
   state = {
@@ -619,6 +621,7 @@ export default class Calendar extends Component {
           showFixedNumberOfWeeks,
           showNeighboringMonth,
           showWeekNumbers,
+          values,
         } = this.props;
         const { onMouseLeave } = this;
 
@@ -638,6 +641,7 @@ export default class Calendar extends Component {
             }
             showNeighboringMonth={showNeighboringMonth}
             showWeekNumbers={showWeekNumbers}
+            values={values}
             {...commonProps}
           />
         );

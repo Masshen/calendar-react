@@ -8,7 +8,7 @@ import Month from './Month';
 import { tileGroupProps } from '../shared/propTypes';
 
 export default function Months(props) {
-  const { activeStartDate } = props;
+  const { activeStartDate, values } = props;
   const start = 0;
   const end = 11;
   const year = getYear(activeStartDate);
@@ -27,6 +27,7 @@ export default function Months(props) {
       end={end}
       start={start}
       tile={Month}
+      values={values}
     />
   );
 }

@@ -19,6 +19,7 @@ export default function TileGroup({
   tile: Tile,
   value,
   valueType,
+  values,
   ...tileProps
 }) {
   const tiles = [];
@@ -34,6 +35,7 @@ export default function TileGroup({
           date,
           dateType,
           hover,
+          values,
         })}
         date={date}
         point={point}
@@ -60,4 +62,5 @@ TileGroup.propTypes = {
   step: PropTypes.number,
   start: PropTypes.number.isRequired,
   tile: PropTypes.func.isRequired,
+  values: PropTypes.array,
 };

@@ -98,4 +98,5 @@ MonthView.propTypes = {
   showFixedNumberOfWeeks: PropTypes.bool,
   showNeighboringMonth: PropTypes.bool,
   showWeekNumbers: PropTypes.bool,
+  values: PropTypes.array,
 };
