@@ -61,7 +61,7 @@ export function getTileClasses(args) {
     throw new Error('args is required');
   }
 
-  const { value, valueType, date, dateType, hover } = args;
+  const { value, valueType, date, dateType, hover, values } = args;
 
   const className = 'react-calendar__tile';
   const classes = [className];
@@ -95,6 +95,12 @@ export function getTileClasses(args) {
     classes.push(`${className}--active`);
   } else if (doRangesOverlap(valueRange, dateRange)) {
     classes.push(`${className}--hasActive`);
+  }
+  if (values) {
+    const index = values.findIndex((x) => x?.getTime() === date?.getTime());
+    if (index !== -1) {
+      classes.push(`${className}--active`);
+    }
   }
 
   const valueRangeClassNames = getRangeClassNames(valueRange, dateRange, `${className}--range`);
