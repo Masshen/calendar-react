@@ -1030,6 +1030,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"get-user-locale@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "get-user-locale@npm:2.2.1"
+  dependencies:
+    "@types/lodash.memoize": ^4.1.7
+    lodash.memoize: ^4.1.1
+  checksum: 929e368d120795295a9fb98724b1f236ea42fe570fa710a8c6d5ecf03f32d11a57966ab7cef38f416523fdf57178d888e835919bc52321696236d74092d06dbc
+  languageName: node
+  linkType: hard
+
 "glob@npm:^7.1.3, glob@npm:^7.1.4":
   version: 7.2.3
   resolution: "glob@npm:7.2.3"
@@ -1591,7 +1601,7 @@ __metadata:
   dependencies:
     "@vitejs/plugin-react": ^3.0.0
     "@wojtekmaj/date-utils": ^1.1.3
-    get-user-locale: ^2.1.3
+    get-user-locale: ^2.2.1
     prop-types: ^15.6.2
     react: ^18.2.0
     react-calendar: "portal:../"
