@@ -1,0 +1,29 @@
+{
+  "name": "react-calendar-test-page",
+  "version": "2.18.0",
+  "description": "A test page for React-Calendar.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "preview": "vite preview"
+  },
+  "author": {
+    "name": "Wojciech Maj",
+    "email": "kontakt@wojtekmaj.pl"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@wojtekmaj/date-utils": "^1.1.3",
+    "get-user-locale": "^2.1.3",
+    "prop-types": "^15.6.2",
+    "react": "^18.2.0",
+    "react-calendar": "portal:../",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.0.0",
+    "vite": "^4.0.0"
+  }
+}
